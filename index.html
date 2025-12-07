@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TECHNICAL FAHAD Intro</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Audiowide&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("ajrak.png");    /*  Your uploaded Ajrak background */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Audiowide', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 150vh;
+      overflow-x: hidden;
+      color: white;
+      padding-top: 30px;
+    }
+
+    .neon-text {
+      font-size: 2.8em;
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+      animation: flicker 2.5s infinite alternate;
+      margin-bottom: 40px;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+
+    .image-frame {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-frame::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: linear-gradient(120deg, #ff00cc, #00ffff, #ffcc00, #00ffcc);
+      background-size: 300% 300%;
+      animation: neonBorder 3s linear infinite;
+      z-index: -1;
+      filter: blur(4px);
+    }
+
+    @keyframes neonBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .box {
+      position: relative;
+      padding: 25px;
+      margin-bottom: 35px;
+      width: 80%;
+      max-width: 750px;
+      text-align: center;
+      font-size: 1.2em;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 15px;
+      color: #000;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .box::before {
+      content: '';
+      position: absolute;
+      top: -3px; left: -3px;
+      right: -3px; bottom: -3px;
+      background: linear-gradient(60deg, #ff00cc, #00ffff, #ffcc00, #00ffcc);
+      background-size: 400% 400%;
+      border-radius: 20px;
+      animation: rotateBorder 20s linear infinite;
+      z-index: -1;
+      filter: blur(3px);
+    }
+
+    @keyframes rotateBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .button {
+      background-color: #111;
+      color: #fff;
+      border: 2px solid transparent;
+      padding: 15px 35px;
+      margin: 25px 0;
+      font-size: 1.1em;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: buttonGlow 5s infinite alternate;
+      box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .button:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 25px #ff00cc, 0 0 35px #00ffcc;
+    }
+
+    @keyframes buttonGlow {
+      0% { box-shadow: 0 0 10px #00ffff, 0 0 25px #ff00ff; }
+      50% { box-shadow: 0 0 15px #ff33cc, 0 0 30px #00ffcc; }
+      100% { box-shadow: 0 0 25px #00ffcc, 0 0 40px #ff66ff; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 class="neon-text">TECHNICAL FAHAD</h1>
+
+  <div class="image-frame">
+    <img src="fahad.jpg" alt="Fahad Photo">
+  </div>
+
+  <div class="box">
+    Welcome to my official website!  
+    I am Technical Fahad – Android Developer, Script Maker, Bot Developer,  
+    and CyberTech Specialist.
+  </div>
+
+  <div class="box">
+    IF You Wanna Free TikTok Likes Trick  
+    Then Click On ( Contact ) Button  
+    And Get The Trick 
+  </div>
+
+  <a href="https://wa.me/923251138959" target="_blank">
+    <button class="button">Contact Me</button>
+  </a>
+
+</body>
+</html>
